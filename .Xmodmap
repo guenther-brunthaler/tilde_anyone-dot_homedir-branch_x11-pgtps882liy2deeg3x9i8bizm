@@ -1,0 +1,541 @@
+! This file must be processed with xmodmap in order to
+! take effekt. In the case of Xfce4 this is done
+! automatically by the startup files.
+!
+! Use the "xev"-Tool to find out the required keycodes.
+!
+! Run script "xmodmap-template-generator" to generate a template
+! for this file which contains all symbolic names available for
+! mapping.
+!
+! Alternatively, to do this manually, look into the File
+!
+! /usr/include/X11/XF86keysym.h
+!
+! to find the symbolic names, like for instance the line
+!
+! #define XF86XK_AudioLowerVolume 0x1008FF11   /* Volume control down        */
+!
+! Remove the "XK_"-substring from the symbolic #define name in order to
+! determine the symbolic name to use in the .Xmodmap file:
+!
+! Undesired acceleration for keys can be disabled with a command like
+!
+! $ xset -r 174 -r 176
+!
+! After xmodmap has successfully processed the assignments, use the
+! Xfce4 keyboard shortcurtcut editor in order to assign a function
+! to the multimedia key, such as executing an arbitrary program.
+!
+! If your desktop Environment or Windows Manager does not support
+! such hotkey handling, x11-misc/xbindkeys can be emerged for this
+! as a stand-alone solution.
+! Mode Switch Lock
+
+!keycode ? = XF86ModeLock
+
+! Monitor/panel brightness
+!keycode ? = XF86MonBrightnessUp
+
+! Monitor/panel brightness
+!keycode ? = XF86MonBrightnessDown
+
+! Keyboards may be lit
+!keycode ? = XF86KbdLightOnOff
+
+! Keyboards may be lit
+!keycode ? = XF86KbdBrightnessUp
+
+! Keyboards may be lit
+!keycode ? = XF86KbdBrightnessDown
+
+! System into standby mode
+!keycode ? = XF86Standby
+
+! Volume control down
+keycode 174 = XF86AudioLowerVolume
+
+! Mute sound from the system
+keycode 160 = XF86AudioMute
+
+! Volume control up
+keycode 176 = XF86AudioRaiseVolume
+
+! Start playing of audio >
+!keycode ? = XF86AudioPlay
+
+! Stop playing audio
+!keycode ? = XF86AudioStop
+
+! Previous track
+!keycode ? = XF86AudioPrev
+
+! Next track
+!keycode ? = XF86AudioNext
+
+! Display user's home page
+!keycode ? = XF86HomePage
+
+! Invoke user's mail program
+!keycode ? = XF86Mail
+
+! Start application
+!keycode ? = XF86Start
+
+! Search
+!keycode ? = XF86Search
+
+! Record audio application
+!keycode ? = XF86AudioRecord
+
+! Invoke calculator program
+!keycode ? = XF86Calculator
+
+! Invoke Memo taking program
+!keycode ? = XF86Memo
+
+! Invoke To Do List program
+!keycode ? = XF86ToDoList
+
+! Invoke Calendar program
+!keycode ? = XF86Calendar
+
+! Deep sleep the system
+!keycode ? = XF86PowerDown
+
+! Adjust screen contrast
+!keycode ? = XF86ContrastAdjust
+
+! Rocker switches exist up
+!keycode ? = XF86RockerUp
+
+! and down
+!keycode ? = XF86RockerDown
+
+! and let you press them
+!keycode ? = XF86RockerEnter
+
+! Like back on a browser
+!keycode ? = XF86Back
+
+! Like forward on a browser
+!keycode ? = XF86Forward
+
+! Stop current operation
+!keycode ? = XF86Stop
+
+! Refresh the page
+!keycode ? = XF86Refresh
+
+! Power off system entirely
+!keycode ? = XF86PowerOff
+
+! Wake up system from sleep
+!keycode ? = XF86WakeUp
+
+! Eject device (e.g. DVD)
+!keycode ? = XF86Eject
+
+! Invoke screensaver
+!keycode ? = XF86ScreenSaver
+
+! Invoke web browser
+!keycode ? = XF86WWW
+
+! Put system to sleep
+!keycode ? = XF86Sleep
+
+! Show favorite locations
+!keycode ? = XF86Favorites
+
+! Pause audio playing
+!keycode ? = XF86AudioPause
+
+! Launch media collection app
+!keycode ? = XF86AudioMedia
+
+! Display "My Computer" window
+!keycode ? = XF86MyComputer
+
+! Display vendor home web site
+!keycode ? = XF86VendorHome
+
+! Light bulb keys exist
+!keycode ? = XF86LightBulb
+
+! Display shopping web site
+!keycode ? = XF86Shop
+
+! Show history of web surfing
+!keycode ? = XF86History
+
+! Open selected URL
+!keycode ? = XF86OpenURL
+
+! Add URL to favorites list
+!keycode ? = XF86AddFavorite
+
+! Show "hot" links
+!keycode ? = XF86HotLinks
+
+! Invoke brightness adj. UI
+!keycode ? = XF86BrightnessAdjust
+
+! Display financial site
+!keycode ? = XF86Finance
+
+! Display user's community
+!keycode ? = XF86Community
+
+! "rewind" audio track
+!keycode ? = XF86AudioRewind
+
+!keycode ? = XF86BackForward
+
+! Launch Application
+!keycode ? = XF86Launch0
+
+! Launch Application
+!keycode ? = XF86Launch1
+
+! Launch Application
+!keycode ? = XF86Launch2
+
+! Launch Application
+!keycode ? = XF86Launch3
+
+! Launch Application
+!keycode ? = XF86Launch4
+
+! Launch Application
+!keycode ? = XF86Launch5
+
+! Launch Application
+!keycode ? = XF86Launch6
+
+! Launch Application
+!keycode ? = XF86Launch7
+
+! Launch Application
+!keycode ? = XF86Launch8
+
+! Launch Application
+!keycode ? = XF86Launch9
+
+! Launch Application
+!keycode ? = XF86LaunchA
+
+! Launch Application
+!keycode ? = XF86LaunchB
+
+! Launch Application
+!keycode ? = XF86LaunchC
+
+! Launch Application
+!keycode ? = XF86LaunchD
+
+! Launch Application
+!keycode ? = XF86LaunchE
+
+! Launch Application
+!keycode ? = XF86LaunchF
+
+! switch to application, left
+!keycode ? = XF86ApplicationLeft
+
+! switch to application, right
+!keycode ? = XF86ApplicationRight
+
+! Launch bookreader
+!keycode ? = XF86Book
+
+! Launch CD/DVD player
+!keycode ? = XF86CD
+
+! Launch Calculater
+!keycode ? = XF86Calculater
+
+! Clear window, screen
+!keycode ? = XF86Clear
+
+! Close window
+!keycode ? = XF86Close
+
+! Copy selection
+!keycode ? = XF86Copy
+
+! Cut selection
+!keycode ? = XF86Cut
+
+! Output switch key
+!keycode ? = XF86Display
+
+! Launch DOS (emulation)
+!keycode ? = XF86DOS
+
+! Open documents window
+!keycode ? = XF86Documents
+
+! Launch spread sheet
+!keycode ? = XF86Excel
+
+! Launch file explorer
+!keycode ? = XF86Explorer
+
+! Launch game
+!keycode ? = XF86Game
+
+! Go to URL
+!keycode ? = XF86Go
+
+! Logitch iTouch- don't use
+!keycode ? = XF86iTouch
+
+! Log off system
+!keycode ? = XF86LogOff
+
+!keycode ? = XF86Market
+
+! enter meeting in calendar
+!keycode ? = XF86Meeting
+
+! distingush keyboard from PB
+!keycode ? = XF86MenuKB
+
+! distinuish PB from keyboard
+!keycode ? = XF86MenuPB
+
+! Favourites
+!keycode ? = XF86MySites
+
+! New (folder, document...
+!keycode ? = XF86New
+
+! News
+!keycode ? = XF86News
+
+! Office home (old Staroffice)
+!keycode ? = XF86OfficeHome
+
+! Open
+!keycode ? = XF86Open
+
+!keycode ? = XF86Option
+
+! Paste
+!keycode ? = XF86Paste
+
+! Launch phone; dial number
+!keycode ? = XF86Phone
+
+! Compaq's Q - don't use
+!keycode ? = XF86Q
+
+! Reply e.g., mail
+!keycode ? = XF86Reply
+
+! Reload web page, file, etc.
+!keycode ? = XF86Reload
+
+! Rotate windows e.g. xrandr
+!keycode ? = XF86RotateWindows
+
+! don't use
+!keycode ? = XF86RotationPB
+
+! don't use
+!keycode ? = XF86RotationKB
+
+! Save (file, document, state
+!keycode ? = XF86Save
+
+! Scroll window/contents up
+!keycode ? = XF86ScrollUp
+
+! Scrool window/contentd down
+!keycode ? = XF86ScrollDown
+
+! Use XKB mousekeys instead
+!keycode ? = XF86ScrollClick
+
+! Send mail, file, object
+!keycode ? = XF86Send
+
+! Spell checker
+!keycode ? = XF86Spell
+
+! Split window or screen
+!keycode ? = XF86SplitScreen
+
+! Get support (??)
+!keycode ? = XF86Support
+
+! Show tasks
+!keycode ? = XF86TaskPane
+
+! Launch terminal emulator
+!keycode ? = XF86Terminal
+
+! toolbox of desktop/app.
+!keycode ? = XF86Tools
+
+!keycode ? = XF86Travel
+
+!keycode ? = XF86UserPB
+
+!keycode ? = XF86User1KB
+
+!keycode ? = XF86User2KB
+
+! Launch video player
+!keycode ? = XF86Video
+
+! button from a mouse wheel
+!keycode ? = XF86WheelButton
+
+! Launch word processor
+!keycode ? = XF86Word
+
+!keycode ? = XF86Xfer
+
+! zoom in view, map, etc.
+!keycode ? = XF86ZoomIn
+
+! zoom out view, map, etc.
+!keycode ? = XF86ZoomOut
+
+! mark yourself as away
+!keycode ? = XF86Away
+
+! as in instant messaging
+!keycode ? = XF86Messenger
+
+! Launch web camera app.
+!keycode ? = XF86WebCam
+
+! Forward in mail
+!keycode ? = XF86MailForward
+
+! Show pictures
+!keycode ? = XF86Pictures
+
+! Launch music application
+!keycode ? = XF86Music
+
+! Display battery information
+!keycode ? = XF86Battery
+
+! Enable/disable Bluetooth
+!keycode ? = XF86Bluetooth
+
+! Enable/disable WLAN
+!keycode ? = XF86WLAN
+
+! Enable/disable UWB	
+!keycode ? = XF86UWB
+
+! fast-forward audio track
+!keycode ? = XF86AudioForward
+
+! toggle repeat mode
+!keycode ? = XF86AudioRepeat
+
+! toggle shuffle mode
+!keycode ? = XF86AudioRandomPlay
+
+! cycle through subtitle
+!keycode ? = XF86Subtitle
+
+! cycle through audio tracks
+!keycode ? = XF86AudioCycleTrack
+
+! cycle through angles
+!keycode ? = XF86CycleAngle
+
+! video: go one frame back
+!keycode ? = XF86FrameBack
+
+! video: go one frame forward
+!keycode ? = XF86FrameForward
+
+! display, or shows an entry for time seeking
+!keycode ? = XF86Time
+
+! Select button on joypads and remotes
+!keycode ? = XF86Select
+
+! Show a view options/properties
+!keycode ? = XF86View
+
+! Go to a top-level menu in a video
+!keycode ? = XF86TopMenu
+
+! Red button
+!keycode ? = XF86Red
+
+! Green button
+!keycode ? = XF86Green
+
+! Yellow button
+!keycode ? = XF86Yellow
+
+! Blue button
+!keycode ? = XF86Blue
+
+! Sleep to RAM
+!keycode ? = XF86Suspend
+
+! Sleep to disk
+!keycode ? = XF86Hibernate
+
+! Toggle between touchpad/trackstick
+!keycode ? = XF86TouchpadToggle
+
+! The touchpad got switched on
+!keycode ? = XF86TouchpadOn
+
+! The touchpad got switched off
+!keycode ? = XF86TouchpadOff
+
+!keycode ? = XF86Switch_VT_1
+
+!keycode ? = XF86Switch_VT_2
+
+!keycode ? = XF86Switch_VT_3
+
+!keycode ? = XF86Switch_VT_4
+
+!keycode ? = XF86Switch_VT_5
+
+!keycode ? = XF86Switch_VT_6
+
+!keycode ? = XF86Switch_VT_7
+
+!keycode ? = XF86Switch_VT_8
+
+!keycode ? = XF86Switch_VT_9
+
+!keycode ? = XF86Switch_VT_10
+
+!keycode ? = XF86Switch_VT_11
+
+!keycode ? = XF86Switch_VT_12
+
+! force ungrab
+!keycode ? = XF86Ungrab
+
+! kill application with grab
+!keycode ? = XF86ClearGrab
+
+! next video mode available
+!keycode ? = XF86Next_VMode
+
+! prev. video mode available
+!keycode ? = XF86Prev_VMode
+
+! print window tree to log
+!keycode ? = XF86LogWindowTree
+
+! print all active grabs to log
+!keycode ? = XF86LogGrabInfo
+
