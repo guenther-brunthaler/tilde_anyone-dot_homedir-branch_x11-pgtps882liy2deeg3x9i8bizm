@@ -1,12 +1,10 @@
-! This file must be processed with xmodmap in order to
-! take effekt. In the case of Xfce4 this is done
-! automatically by the startup files.
+! This file must be processed with xmodmap in order to take effect. In
+! the case of Xfce4 this is done automatically by the startup files.
 !
 ! Use the "xev"-Tool to find out the required keycodes.
 !
-! Run script "xmodmap-template-generator" to generate a template
-! for this file which contains all symbolic names available for
-! mapping.
+! Run script "xmodmap-template-generator" to generate a template for
+! this file which contains all symbolic names available for mapping.
 !
 ! Alternatively, to do this manually, look into the File
 !
@@ -14,7 +12,7 @@
 !
 ! to find the symbolic names, like for instance the line
 !
-! #define XF86XK_AudioLowerVolume 0x1008FF11   /* Volume control down        */
+! #define XF86XK_AudioLowerVolume 0x1008FF11   /* Volume control down */
 !
 ! Remove the "XK_"-substring from the symbolic #define name in order to
 ! determine the symbolic name to use in the .Xmodmap file:
@@ -24,14 +22,14 @@
 ! $ xset -r 174 -r 176
 !
 ! After xmodmap has successfully processed the assignments, use the
-! Xfce4 keyboard shortcurtcut editor in order to assign a function
-! to the multimedia key, such as executing an arbitrary program.
+! Xfce4 keyboard shortcurtcut editor in order to assign a function to
+! the multimedia key, such as executing an arbitrary program.
 !
-! If your desktop Environment or Windows Manager does not support
-! such hotkey handling, x11-misc/xbindkeys can be emerged for this
-! as a stand-alone solution.
-! Mode Switch Lock
+! If your desktop Environment or Windows Manager does not support such
+! hotkey handling, x11-misc/xbindkeys can be emerged for this as a
+! stand-alone solution.
 
+! Mode Switch Lock
 !keycode ? = XF86ModeLock
 
 ! Monitor/panel brightness
@@ -58,7 +56,7 @@ keycode 174 = XF86AudioLowerVolume
 ! Mute sound from the system
 keycode 160 = XF86AudioMute
 
-! Volume control up
+! Volumem control up
 keycode 176 = XF86AudioRaiseVolume
 
 ! Start playing of audio >
@@ -497,6 +495,9 @@ keycode 176 = XF86AudioRaiseVolume
 ! The touchpad got switched off
 !keycode ? = XF86TouchpadOff
 
+! Mute the Mic from the system
+!keycode ? = XF86AudioMicMute
+
 !keycode ? = XF86Switch_VT_1
 
 !keycode ? = XF86Switch_VT_2
@@ -538,4 +539,3 @@ keycode 176 = XF86AudioRaiseVolume
 
 ! print all active grabs to log
 !keycode ? = XF86LogGrabInfo
-
