@@ -1,0 +1,19 @@
+#! /bin/false
+
+# Stop logging, unless debug tracing has been enabled.
+#
+# Symlink this snippet as ~/.xsessionrc or source it from there (provided that
+# you want to use it at all).
+#
+# v2022.59
+
+case $- in
+	*[xv]*) ;;
+	*)
+		if test -f "$ERRFILE"
+		then
+			# Stop logging to "~/.xsession-errors".
+			ERRFILE=/dev/null
+			exec > "$ERRFILE" 2>& 1 < "$ERRFILE"
+		fi
+esac
